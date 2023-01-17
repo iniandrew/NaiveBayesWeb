@@ -20,6 +20,7 @@ class DashboardController extends Controller
             return [
                 'graduated' => $registrant->where('status', Registrant::STATUS_GRADUATED)->count(),
                 'not_graduated' => $registrant->where('status', Registrant::STATUS_NOT_GRADUATED)->count(),
+                'total' => $registrant->count(),
             ];
         });
 
@@ -27,6 +28,7 @@ class DashboardController extends Controller
             return [
                 'graduated' => $registrant->where('status', Registrant::STATUS_GRADUATED)->count(),
                 'not_graduated' => $registrant->where('status', Registrant::STATUS_NOT_GRADUATED)->count(),
+                'total' => $registrant->count(),
             ];
         });
 
@@ -34,6 +36,7 @@ class DashboardController extends Controller
             return [
                 'graduated' => $registrant->where('status', Registrant::STATUS_GRADUATED)->count(),
                 'not_graduated' => $registrant->where('status', Registrant::STATUS_NOT_GRADUATED)->count(),
+                'total' => $registrant->count(),
             ];
         });
 

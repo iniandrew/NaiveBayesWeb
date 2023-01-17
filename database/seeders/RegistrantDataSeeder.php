@@ -14,6 +14,6 @@ class RegistrantDataSeeder extends Seeder
      */
     public function run()
     {
-        Registrant::factory()->count(5000)->create();
+        Registrant::factory()->count(3000)->create();
     }
 }
